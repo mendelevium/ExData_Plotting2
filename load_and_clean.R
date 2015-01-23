@@ -2,7 +2,7 @@
 
 ## variables
 unzipPath <- "./data/exdata-data-NEI_data"
-filePath <- "./data/exdata-data-NEI_data"
+filePath <- "./data/exdata-data-NEI_data/"
 url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
 
 ## create data folder
