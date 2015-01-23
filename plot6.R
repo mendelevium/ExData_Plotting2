@@ -12,7 +12,7 @@ png(filename = "./plot6.png",
 
 ## data preparation
 subset <- summaryData[summaryData$fips == "24510"|summaryData$fips == "06037", ]
-motor <- grep("motor", sccData$Short.Name, ignore.case = T)
+motor <- grep("veh", sccData$Short.Name, ignore.case = T) ## veh stand for vehicule in Short.Name
 motor <- sccData[motor, ]
 motor <- subset[subset$SCC %in% motor$SCC, ]
 

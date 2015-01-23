@@ -9,7 +9,7 @@ png(filename = "./plot5.png",
 
 ## data preparation
 subset <- summaryData[summaryData$fips == "24510", ]
-motor <- grep("veh", sccData$Short.Name, ignore.case = T)
+motor <- grep("veh", sccData$Short.Name, ignore.case = T)  ## veh stand for vehicule in Short.Name
 motor <- sccData[motor, ]
 motor <- subset[subset$SCC %in% motor$SCC, ]
 motorEmissions <- aggregate(motor$Emissions, list(motor$year), FUN = "sum")
